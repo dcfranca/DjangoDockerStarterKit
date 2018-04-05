@@ -1,2 +1,4 @@
 Django
 djangorestframework
+flake8
+pep257
