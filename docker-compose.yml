@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: wqxEYuVPjbFgAh4dXtR5JpkLyZWXpnLq
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    volumes:
+      - .:/home/docker/code
+    environment:
+      SECRET_KEY: 4H448YZRdrZtrDwFrZ8VXGxCiA4Sy5FA
+      DJANGO_SETTINGS_MODULE: website.settings.staging
+      RDS_DB_NAME: postgres
+      RDS_HOSTNAME: db
+      RDS_PASSWORD: wqxEYuVPjbFgAh4dXtR5JpkLyZWXpnLq
+      RDS_PORT: 5432
+      RDS_USERNAME: postgres
+
+    ports:
+      - "80:80"
+    depends_on:
+      - db
