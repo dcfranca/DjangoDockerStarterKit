@@ -1,7 +1,7 @@
 # DjangoStarterKit
 Use this as a base for a new project using  Docker + Django + Django-Rest-Framework + NGINX + UWSGI + Supervisor
 
-## QuickStart
+## Quick Start
 Clone this repository
 Run `docker-compose up`
 Wait until docker started
