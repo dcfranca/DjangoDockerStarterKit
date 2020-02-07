@@ -3,3 +3,6 @@ djangorestframework
 flake8
 pep257
 psycopg2-binary
+djangorestframework-jsonapi
+djangorestframework-jsonapi[django-filter]
+djangorestframework-jsonapi[django-polymorphic]
