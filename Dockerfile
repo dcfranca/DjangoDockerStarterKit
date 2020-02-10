@@ -12,9 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM ubuntu:16.04
-
-MAINTAINER Dockerfiles
+FROM ubuntu:19.04
 
 # Install required packages and remove the apt packages cache when done.
 
